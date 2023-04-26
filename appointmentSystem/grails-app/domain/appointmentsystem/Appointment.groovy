@@ -2,7 +2,7 @@ package appointmentsystem
 
 class Appointment {
 
-    Date appDate
+    String appDate
     String appTime
     int appDuration
     String roomNumber
@@ -12,13 +12,11 @@ class Appointment {
     }
 
     static constraints = {
-        appTime size: 1..10, blank: false
         roomNumber size: 1..30, blank: false, unique: true
         appDuration min: 10
     }
 
-    static hasOne = [doctor: Doctor]
+    static hasOne = [doctor: Doctor, surgery: Surgery, patient: Patient]
 
-    static hasMany = [patient: Patient]
  
 }

@@ -19,9 +19,8 @@ class Patient {
         patientID size: 5..50, blank: false, unique: true
     }
 
-    static hasOne = [appointment: Appointment]
+    static hasOne = [surgery: Surgery]
 
-    static hasMany = [prescription: Prescription, surgery: Surgery]
+    static hasMany = [prescriptions: Prescription, appointments: Appointment]
 
-    static belongsTo = [doctor: Doctor]
 }

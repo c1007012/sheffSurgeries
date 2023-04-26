@@ -19,7 +19,7 @@ class Surgery {
         numberOfPatients min: 10
     }
 
-    static hasMany = [doctor: Doctor, receptionist: Receptionist, nurse: Nurse, patient: Patient]
+    static hasMany = [doctors: Doctor, receptionists: Receptionist, nurses: Nurse, patients: Patient, appointments: Appointment]
 
-    static belongsTo = [patient: Patient]
+    
 }

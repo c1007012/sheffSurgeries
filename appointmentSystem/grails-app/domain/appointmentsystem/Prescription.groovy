@@ -3,14 +3,15 @@ package appointmentsystem
 class Prescription {
 
     String pharmacyName
-    int prescripNumber
+    String prescriptionNumber
     String medicine
+    int daysSupply
     String totalCost
     Date dateIssued
-    String patientPaying
+    boolean patientPaying
 
     String toString() {
-        return pharmacyName
+        return prescriptionNumber
     }
 
     static constraints = {

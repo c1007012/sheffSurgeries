@@ -2,7 +2,7 @@ package appointmentsystem
 
 class Doctor {
 
-    String fullName
+    String doctorName
     String qualification
     String position
     String doctorEmail
@@ -13,16 +13,17 @@ class Doctor {
 
 
     String toString() {
-        return fullName
+        return doctorName
     }
 
     static constraints = {
-        fullName size: 1..100, blank: false, unique: true
+        doctorName size: 1..100, blank: false, unique: true
    
     }
+    static belongsTo = [Nurse]
 
     static hasOne = [surgery: Surgery]
 
-    static hasMany = [prescription: Prescription, appointment: Appointment, nurse: Nurse]
+    static hasMany = [prescriptions: Prescription, appointments: Appointment, nurses: Nurse]
 
 }
