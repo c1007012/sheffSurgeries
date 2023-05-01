@@ -1,4 +1,4 @@
-package appointmentsystem
+package appointmentsystem /* com.ngarnett.Receptionist */
 
 class Receptionist {
 
@@ -17,6 +17,6 @@ class Receptionist {
         recepUsername size: 1..30, blank: false, unique: true
         recepPassword size: 4..30, blank: false, unique: true
     }
-
-    static hasOne = [surgery: Surgery]
+     
+    static hasOne = [surgery:Surgery]
 }

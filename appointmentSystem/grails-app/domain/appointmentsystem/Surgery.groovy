@@ -1,4 +1,4 @@
-package appointmentsystem
+package appointmentsystem /* com.ngarnett.Surgery */
 
 class Surgery {
 
@@ -18,6 +18,8 @@ class Surgery {
         name size: 5..40, blank: false
         numberOfPatients min: 10
     }
+
+    static belongsTo = [Patient]
 
     static hasMany = [doctors: Doctor, receptionists: Receptionist, nurses: Nurse, patients: Patient, appointments: Appointment]
 

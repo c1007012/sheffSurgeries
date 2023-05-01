@@ -1,4 +1,4 @@
-package appointmentsystem
+package appointmentsystem /* com.ngarnett.Nurse */
 
 class Nurse {
 
@@ -17,7 +17,7 @@ class Nurse {
         
     }
 
-    static hasOne = [surgery: Surgery] 
+    static hasOne = [surgery: Surgery]
    
     static hasMany = [doctors: Doctor]     
 

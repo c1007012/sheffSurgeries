@@ -1,4 +1,5 @@
-package appointmentsystem
+package appointmentsystem /* com.ngarnett.Appointment */ 
+/*was inputted this way as application struggled to run the usual way */
 
 class Appointment {
 

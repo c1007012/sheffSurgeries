@@ -1,4 +1,4 @@
-package appointmentsystem
+package appointmentsystem /* com.ngarnett.Prescription */
 
 class Prescription {
 

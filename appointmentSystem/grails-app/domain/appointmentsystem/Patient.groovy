@@ -1,4 +1,4 @@
-package appointmentsystem
+package appointmentsystem /* com.ngarnett.Patient */
 
 class Patient {
 
@@ -19,8 +19,7 @@ class Patient {
         patientID size: 5..50, blank: false, unique: true
     }
 
-    static hasOne = [surgery: Surgery]
 
-    static hasMany = [prescriptions: Prescription, appointments: Appointment]
+    static hasMany = [surgeries: Surgery, prescriptions: Prescription, appointments: Appointment]
 
 }

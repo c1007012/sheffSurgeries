@@ -51,6 +51,11 @@
 	           </button>
 	    </div>
 
+  <div class="row">
+         
+         <asset:image src="medical.jpg"/>
+
+      </div>
 
            </div>
         </section>
