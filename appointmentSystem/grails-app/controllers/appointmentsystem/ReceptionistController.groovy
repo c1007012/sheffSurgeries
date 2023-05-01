@@ -1,6 +1,6 @@
-package appointmentsystem
+package appointmentsystem /* com.ngarnett */
 
 class ReceptionistController {
 
-    def scaffold = Receptionist
+    def scaffold = Receptionist /* com.ngarnett.Receptionist */
 }

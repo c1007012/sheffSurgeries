@@ -1,6 +1,6 @@
-package appointmentsystem
+package appointmentsystem /* com.ngarnett*/
 
 class PrescriptionController {
 
-    def scaffold = Prescription
+    def scaffold = Prescription /* com.ngarnett.Prescription */
 }

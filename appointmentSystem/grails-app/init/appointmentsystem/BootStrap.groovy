@@ -1,9 +1,9 @@
-package appointmentsystem
+package appointmentsystem /* com.ngarnett */
 
 class BootStrap {
 
     def init = { servletContext ->
-        def surgery = new Surgery(
+        def surgery = new Surgery( /* com.ngarnett.Surgery */
 	 name: 'Sheffield Medical Centre',
          address: '21 Spital Street, Sheffield',
          postcode: 'S3 9LB',
@@ -14,7 +14,7 @@ class BootStrap {
          registeringNewPatients: true
         ).save()
 
-        def surgery2 = new Surgery(
+        def surgery2 = new Surgery( /* com.ngarnett.Surgery */
 	 name: 'Manchester Road Surgery',
          address: '484 Manchester Road, Sheffield',
          postcode: 'S10 5PN',
@@ -25,7 +25,7 @@ class BootStrap {
          registeringNewPatients: true
         ).save()
 	
-        def doctor = new Doctor(
+        def doctor = new Doctor( /* com.ngarnett.Doctor */
          doctorName: 'Fred Smith',
          qualification: 'MBBS',
          position: 'Surgeon',
@@ -37,7 +37,7 @@ class BootStrap {
          surgery: surgery  
         ).save()
 
-        def doctor2 = new Doctor(
+        def doctor2 = new Doctor( /* com.ngarnett.Doctor */
          doctorName: 'Darwin Paulson',
          qualification: 'BMBS',
          position: 'Junior Doctor',
@@ -49,7 +49,7 @@ class BootStrap {
          surgery: surgery  
         ).save()
 
-        def patient = new Patient(
+        def patient = new Patient( /* com.ngarnett.Patient */
          patientName: 'John Doe',
          patientAddress: '23 Prospect Avenue',
          patientResidence: 'Sheffield',
@@ -60,7 +60,7 @@ class BootStrap {
          surgery: surgery
         ).save()
 
-        def patient2 = new Patient(
+        def patient2 = new Patient( /* com.ngarnett.Patient */
          patientName: 'Juliane Johnson',
          patientAddress: '12  Fairfax Road',
          patientResidence: 'Sheffield',
@@ -71,7 +71,7 @@ class BootStrap {
          surgery: surgery
         ).save()
 
-        def receptionist = new Receptionist(
+        def receptionist = new Receptionist( /* com.ngarnett.Receptionist */
          recepName: 'Daniel Stephens',
          recepEmail: 'danielstephens@outlook.com',
          recepUsername: 'username',
@@ -81,7 +81,7 @@ class BootStrap {
         ).save()
 
 
-        def receptionist2 = new Receptionist(
+        def receptionist2 = new Receptionist( /* com.ngarnett.Receptionist */
          recepName: 'Casey Kelly',
          recepEmail: 'caseykelly@gmail.com',
          recepUsername: 'ckelly',
@@ -90,7 +90,7 @@ class BootStrap {
          surgery: surgery
         ).save()
 
-        def nurse = new Nurse(
+        def nurse = new Nurse( /* com.ngarnett.Nurse */
 	 nurseName: 'Sarah Peterson',
          qualifications: 'Registered General Nurse',
          nurseEmail: 'sarahpeterson@yahoo.com',
@@ -99,7 +99,7 @@ class BootStrap {
          surgery: surgery
         ).save()
 
-        def nurse2 = new Nurse(
+        def nurse2 = new Nurse( /* com.ngarnett.Nurse */
 	 nurseName: 'Micheal Wright',
          qualifications: 'Registered General Nurse',
          nurseEmail: 'mwright@outlook.com',
@@ -108,7 +108,7 @@ class BootStrap {
          surgery: surgery
         ).save()
 
-        def appointment = new Appointment(
+        def appointment = new Appointment( /* com.ngarnett.Appointment */
 	 appDate: '2023/02/12',
          appTime: '17:00',
 	 appDuration: 30,
@@ -118,7 +118,7 @@ class BootStrap {
 	 patient: patient
 	).save()
 
-        def appointment2 = new Appointment(
+        def appointment2 = new Appointment( /* com.ngarnett.Appointment */
 	 appDate: '2023/03/15',
          appTime: '10:30',
 	 appDuration: 60,
@@ -128,7 +128,7 @@ class BootStrap {
 	 patient: patient
 	).save()
 
-	def prescription = new Prescription(
+	def prescription = new Prescription( /* com.ngarnett.Prescription */
 	 pharmacyName: 'Well Pharmacy',
 	 prescriptionNumber: 4657,
 	 medicine: 'Ibuprofen',
@@ -140,7 +140,7 @@ class BootStrap {
          patient: patient
 	).save()
 
-        def prescription2 = new Prescription(
+        def prescription2 = new Prescription( /* com.ngarnett.Prescription */
 	 pharmacyName: 'London Road Pharmacy',
 	 prescriptionNumber: 2289,
 	 medicine: 'Paracetamol',
